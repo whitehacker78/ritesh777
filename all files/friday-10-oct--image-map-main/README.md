@@ -1,0 +1,1 @@
+# friday-10-oct--image-map

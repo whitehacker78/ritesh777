@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>NESTED TABLE</h1>
+<body align="center">
+    <table  align="center"   border="5">
+        <thead>
+        <tr>
+            <th>header column 1</th>
+            <th>header column 2</th>
+            <th>header column 3</th>
+            <th>header column 4</th>
+        </tr>
+    </thead>
+    <tbody border="1">
+        <tr>
+            <td>row 2 item 1</td>
+            <td>row 2 item 2</td>
+            <td rowspan="2">
+                <h3>row 2 nested table 1</h3>
+                <table border="2">
+                    <tr>
+                        <th>row 1 header</th>
+                        <td>item</td>
+                        <tr> <th>row 2 header</th>
+                            <td>item</td>
+                        </tr>
+                        <tr>
+                            <th>row 3 header</th> <td>item</td>
+                        </tr>  
+                    </tr>
+                </table>
+            </td>
+            <td>row 2 item 4 second line</td>
+    </tr>
+    <!--table row 2 starts here-->
+    <tr>
+        <td>
+            <table border="2">
+                <h3>nested table 2</h3>
+                <tr>
+                    <th> row 1 header</th> <td>item</td>
+                </tr>
+                    <tr>
+                        <th>row 2 header</th> <td>item</td>
+                    </tr>
+                
+            </table>
+        </td>
+        <td>row 3 item 2</td>
+        <td rowspan="2">row 3 item 3</td>
+    </tr>
+    <!--row 3 started-->
+    <tr>
+        <td>row 4 item 1</td>
+        <td>row 4 item 2</td>
+        <td>row 4 item 3</td>
+    </tr>
+<!--row 3 started-->
+<tr>
+    <td colspan="4">row 5  last row of outer table </td>
+</tr>
+    </tbody>  
+    </table>
+</body>
+</html>

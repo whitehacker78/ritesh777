@@ -1,0 +1,30 @@
+.body{
+    margin: 0%;
+}
+
+.div1{     height: 200px;
+           width: 200px;
+           background-color: aqua;
+           border-radius: 50%;
+           position: absolute;
+           animation-name: batch2;
+           animation-duration: 5s;
+           animation-delay: 3s;
+           animation-iteration-count: infinite;
+
+}
+@keyframes batch2{
+            
+                0%{left: 0;
+                   top: 0;
+                }
+                25%  {  background-color: black;  left:400px;
+                     top:0;}
+                50%  {background-color: blue; left:400px;
+                     top:400px;}
+                75%  { background-color: cadetblue; left:0;
+                     top:400px;}
+                100% { left:0; 
+                    top:0;}
+
+}
